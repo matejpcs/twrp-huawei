@@ -26,6 +26,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),HWDRA-MG)
+# The recovery product uses the shared Android device codename "dura".
+# HWDRA-M/HWDRA-MG are bootloader hardware families, not TARGET_DEVICE
+# values, so gating on either one prevents this init module from being built.
+ifeq ($(TARGET_DEVICE),dura)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

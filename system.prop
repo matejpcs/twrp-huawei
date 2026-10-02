@@ -1,0 +1,9 @@
+# Huawei Y5 (2018), 2 GB variant (DRA-L21).
+# Keep the shared Android device codename "dura" because the recovery
+# sources and partition layout are shared across the Dura family.
+ro.product.brand=HUAWEI
+ro.product.device=dura
+ro.product.manufacturer=HUAWEI
+ro.product.model=DRA-L21
+ro.product.name=omni_dura
+ro.product.board=HWDRA-M
